@@ -5,6 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { EditClientComponent } from './components/edit-client/edit-client.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   { path: 'register', component: RegisterComponent },
   { path: 'settings', component: SettingsComponent },
-  { path: 'client/edit/:id', component: SettingsComponent },
+  { path: 'client/edit/:id', component: EditClientComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

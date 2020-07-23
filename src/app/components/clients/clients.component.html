@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#agregarclientModal">
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#agregarclientModal" #closeButton>
                     <i class="fas fa-plus"></i> Add new Client
                 </a>
             </div>
@@ -33,7 +33,7 @@
                                 <td>{{client.name}} {{client.lastname}}</td>
                                 <td>{{client.balance | currency: 'COP': '$'}}</td>
                                 <td>
-                                    <a routerLink="/client/editar/{{client.id}}" class="btn btn-secondary">
+                                    <a routerLink="/client/edit/{{client.id}}" class="btn btn-secondary">
                                         <i class="fas fa-angle-double-right"></i> Edit
                                     </a>
                                 </td>
