@@ -50,7 +50,7 @@ export class ClientService {
     this.clientDoc = this.db.doc(`clients/${client.id}`);
     this.clientDoc.update(client);
   }
-  deleteClient(client:Client) {
+  deleteClient(client: Client): void {
     this.clientDoc = this.db.doc(`clients/${client.id}`);
     this.clientDoc.delete();
   }
